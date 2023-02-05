@@ -36,8 +36,9 @@ function App() {
       const previousInputKey = Object.keys(otp)[inputIndex - 1];
       if (previousInputKey) {
         let element = document.getElementById(previousInputKey);
+        console.log({ ele: element.value });
         element.focus();
-        element.select();
+        element?.value?.length === 1 && element.select();
       }
     }
   };
