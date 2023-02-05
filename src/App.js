@@ -64,6 +64,7 @@ function App() {
                 value={otp[key]}
                 name={key}
                 maxLength={1}
+                data-testid="otp-input"
               />
             );
           })}
